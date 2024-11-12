@@ -1,0 +1,40 @@
+{
+	"name": "to-route-pattern",
+	"version": "0.0.2",
+	"author": "alysonmota",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alysonmota/to-router-pattern.git"
+	},
+	"homepage": "https://github.com/alysonmota/to-router-pattern",
+	"type": "module",
+	"types": "out/index.d.ts",
+	"module": "index.mjs",
+	"main": "out/index.cjs",
+	"exports": {
+		"import": {
+			"default": "./out/index.mjs",
+			"types": "./out/index.d.ts"
+		},
+		"require": {
+			"default": "./out/index.cjs",
+			"types": "./out/index.d.ts"
+		}
+	},
+	"scripts": {
+		"dev": "bun index.ts"
+	},
+	"devDependencies": {
+		"@mota.alyson/presets": "1.1.0",
+		"@types/bun": "1.1.13",
+		"bun-plugin-isolated-decl": "0.1.6",
+		"oxc-transform": "0.36.0",
+		"typescript": "5.6.3"
+	},
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"packageManager": "yarn@1.22.22",
+	"files": ["out"]
+}
